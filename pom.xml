@@ -32,6 +32,11 @@
             <artifactId>javafx-fxml</artifactId>
             <version>${javafx.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-media</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/net.sf.javamusictag/jid3lib -->
         <dependency>
             <groupId>net.sf.javamusictag</groupId>

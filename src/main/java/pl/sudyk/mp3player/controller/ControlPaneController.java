@@ -23,29 +23,26 @@ public class ControlPaneController {
     private Slider volumeSlider;
 
     public void initialize() {
-        System.out.println("Control controller created");
-        configureButtons();
-        configureSliders();
+//        System.out.println("Control controller created");
     }
 
-    private void configureSliders() {
-        volumeSlider.valueProperty().addListener((observable, oldValue, newValue) ->
-                System.out.println("Zmiana głośności " + newValue.doubleValue()));
-
-        progressSlider.valueProperty().addListener(observable ->
-                System.out.println("Przesuniecie piosneki"));
+    public Button getNextButton() {
+        return nextButton;
     }
 
-    private void configureButtons() {
-        previousButton.setOnAction(event -> System.out.println("Poprzednia piosenka"));
-        nextButton.setOnAction(x -> System.out.println("Następna piosenka"));
-        playButton.setOnAction(event -> {
-            if(playButton.isSelected()) {
-                System.out.println("Play");
-            } else {
-                System.out.println("Stop");
-            }
-        });
+    public ToggleButton getPlayButton() {
+        return playButton;
     }
 
+    public Button getPreviousButton() {
+        return previousButton;
+    }
+
+    public Slider getProgressSlider() {
+        return progressSlider;
+    }
+
+    public Slider getVolumeSlider() {
+        return volumeSlider;
+    }
 }
