@@ -2,6 +2,8 @@
 
 MP3 Player is a simple application built using Java and JavaFX, designed to play MP3 files and display metadata. It leverages the JavaFX platform for building the graphical user interface (GUI) and the JID3Lib library to extract MP3 metadata.
 
+![MP3 Player Preview](preview.jpg)
+
 ## Features
 - Play MP3 files
 - View MP3 metadata (e.g., song title, artist, album)
